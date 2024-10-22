@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!-- Label Họ tên -->
+        <TextView
+            android:id="@+id/label_ho_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ tên:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Thông tin Họ tên -->
+        <TextView
+            android:id="@+id/text_ho_ten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Văn A"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_ho_ten"
+            app:layout_constraintTop_toTopOf="@id/label_ho_ten" />
+
+        <!-- Label Số điện thoại -->
+        <TextView
+            android:id="@+id/label_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_ho_ten" />
+
+        <!-- Thông tin Số điện thoại -->
+        <TextView
+            android:id="@+id/text_sdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0987654321"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_sdt"
+            app:layout_constraintTop_toTopOf="@id/label_sdt" />
+
+        <!-- Label Trạng thái -->
+        <TextView
+            android:id="@+id/label_trang_thai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_sdt" />
+
+        <!-- Công tắc bật/tắt trạng thái -->
+        <Switch
+            android:id="@+id/switch_trang_thai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_trang_thai"
+            app:layout_constraintTop_toTopOf="@id/label_trang_thai" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

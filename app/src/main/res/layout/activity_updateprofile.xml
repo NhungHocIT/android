@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:id="@+id/main">
+
+<!-- Nut back -->
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/backbutton"
+        android:contentDescription="."/>
+
+<!-- Avatar -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="@drawable/avatarplaceholder"
+        android:id="@+id/avatar_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/more_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="More Photo"/>
+
+    <!-- Ho va ten -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Họ tên: "
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:gravity="bottom"
+        android:paddingTop="10dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:hint="Nguyễn Văn A"/>
+
+<!--        android:hint="@string/fullname"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SDT"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:gravity="bottom"
+        android:paddingTop="10dp"
+        android:textStyle="bold" />
+    <!-- Sdt -->
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:hint="098765xxxx"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:cursorVisible="false"
+        android:editable="false"/>
+
+<!--        android:hint="@string/numberphone"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ:"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:gravity="bottom"
+        android:paddingTop="10dp"
+        android:textStyle="bold" />
+    <!-- Email -->
+    <EditText
+        android:id="@+id/edtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:hint="Ha Noi"/>
+
+
+
+<!--        android:hint="@string/email"-->
+
+
+    <!-- Chon gioi tinh -->
+<!--    <Spinner-->
+<!--        android:id="@+id/sex_spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:minHeight="48dp"/>-->
+<!--&lt;!&ndash;        android:prompt="@string/sex"&ndash;&gt;-->
+
+    <!-- Nut luu -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Lưu"/>
+<!--        android:text="@string/save"-->
+
+</LinearLayout>
+
+</RelativeLayout>

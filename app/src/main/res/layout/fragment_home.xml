@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:gravity="start">
+
+    <!-- Layout chứa EditText và ImageView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_border"
+            android:ems="10"
+            android:hint="Tìm kiếm"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="Cart Icon"
+            android:onClick="openCartActivity"
+            android:padding="16dp"
+            android:src="@drawable/hotdeal" />
+    </LinearLayout>
+
+    <!-- Hiển thị 4 danh mục mặt hàng theo hàng ngang -->
+    <LinearLayout
+        android:id="@+id/categoryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/category1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_border"
+            android:contentDescription="Đồ ăn"
+            android:onClick="opendoan"
+            android:scaleType="centerInside"
+            android:src="@drawable/breakfast" />
+
+        <ImageView
+            android:id="@+id/category2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_border"
+            android:contentDescription="Đồ uống"
+            android:scaleType="centerInside"
+            android:src="@drawable/drink_390166" />
+
+        <ImageView
+            android:id="@+id/category3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_border"
+            android:contentDescription="Bán chạy"
+            android:scaleType="centerInside"
+            android:src="@drawable/hot" />
+
+        <ImageView
+            android:id="@+id/category4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_border"
+            android:contentDescription="Khuyến mại"
+            android:scaleType="centerInside"
+            android:src="@drawable/sale_6188700" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Dòng văn bản đầu tiên sát viền trái -->
+        <!-- Dòng văn bản thứ hai sát viền phải -->
+    </RelativeLayout>
+
+    <!-- Thêm TextView giữa các danh mục và GridView -->
+    <TextView
+        android:id="@+id/bestSellerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mặt hàng bán chạy"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Layout hiển thị các mặt hàng bán chạy -->
+    <GridView
+        android:id="@+id/bestSellerGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_border"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:padding="16dp"
+        android:verticalSpacing="16dp" />
+</LinearLayout>
